@@ -20,7 +20,7 @@ def search_pokemon(name):
         }
     else:
         print("Pokémon not found.")
-        return None
+        return 
 
 def add_pokemon(name):
     """Add a Pokémon to the Pokédex."""
