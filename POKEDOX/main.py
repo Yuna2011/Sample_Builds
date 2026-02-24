@@ -12,8 +12,8 @@ def main():
 
         if choice == "1":
             name = input("Enter Pokémon name or ID: ")
-            for key, value in search_pokemon(name).items: 
-                print(f"{key}: {value}")
+            for key, value in search_pokemon(name).items(): 
+               print(f"{key}: {value}")
         elif choice == "2":
             name = input("Enter Pokémon name to add: ")
             add_pokemon(name)
