@@ -7,7 +7,7 @@ API_URL = "https://pokeapi.co/api/v2/pokemon/"
 pokedex = {}
 
 def search_pokemon(name):
-    """Search for a Pokémon by name or ID and return its details.""" # Triple quotes is a docstring - allows multiline comments!
+    """Search for as Pokémon by name or ID and return its details.""" # Triple quotes is a docstring - allows multiline comments!
     response = requests.get(f"{API_URL}{name.lower()}")
     if response.status_code == 200:
         data = response.json()
