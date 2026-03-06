@@ -12,8 +12,9 @@ def main():
 
         if choice == "1":
             name = input("Enter character name: ")
-            for key, value in search_character(name).items(): 
-              print(f"{key}: {value}")
+            max_key_len = max(len(k) for k in search_character(name))
+            for key, value in search_character(name).items():
+                print(f"{key:<{max_key_len}} : {value}")
         elif choice == "2":
             name = input("Enter character to add: ")
             add_character(name)
